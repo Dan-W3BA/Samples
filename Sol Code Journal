@@ -1,7 +1,7 @@
 From Program-Examples: Counter Program 
 
 use borsh::{BorshDeserialize, BorshSerialize};			                                        //You can simply write 
-use solana_program::{						                                                            your annotations to 
+use solana_program::{						                                                     your annotations to 
     account_info::{next_account_info, AccountInfo},			                                    the side like this. 
     declare_id,
     entrypoint::ProgramResult,
