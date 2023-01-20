@@ -1,0 +1,20 @@
+From Program-Examples: Counter Program 
+
+use borsh::{BorshDeserialize, BorshSerialize};			                                        //You can simply write 
+use solana_program::{						                                                            your annotations to 
+    account_info::{next_account_info, AccountInfo},			                                    the side like this. 
+    declare_id,
+    entrypoint::ProgramResult,
+    msg,
+    program::{invoke, invoke_signed},
+    program_error::ProgramError,
+    pubkey::Pubkey,
+    system_instruction,
+};
+
+// You can also enter your annotations in comment form- be sure we can distinguish between your annotations and the existing comments in the codebase
+
+mod state;
+use state::*;
+
+declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
